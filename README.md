@@ -92,16 +92,6 @@ This project works with [Groq](https://groq.com/) as the LLM provider, so you'll
 
 When you have your API Key copy and paste it in an `.env` file.
 
-The content of this `.env` file should match the structure of the `.env.example` I've created in the repo, but instead of an empty string, the `GROQ_API_KEY` var will contain your API Key.
-
----
-
-## Usage
-
-Once you have both library installed and the `.env` file created, you can start playing with the 4 patterns implementation (I'll encourage you to take a look at the code, to fully understand what is happening under the  hood).
-
-Let's see an example of how to put the 4 patterns into practise.
-
 ---
 
 ### Using a Reflection Agent - Reflection Pattern
@@ -135,7 +125,7 @@ print(final_response)
 
 An example of how to create a custom tool and bind it to a Tool Agent.
 
-First, let's create the tool. In this case, I'll be creating a tool for interacting with Hacker News. To define a tool, we just need to decorate the Python function with the `@tool`decorator.
+First, let's create the tool. In this case, We'll be creating a tool for interacting with Hacker News. To define a tool, we just need to decorate the Python function with the `@tool`decorator.
 
 ```python
 import json
@@ -202,7 +192,7 @@ As a paradigmatic example of the Planning Pattern, `agentic-patterns` offers an 
 
 The `ReactAgent` is an evolution of the `ToolAgent`, extending its planning and reasoning capabilities.
 
-As we did before, we'll begin by defining the tools. In this case, I'll create three.
+As we did before, we'll begin by defining the tools. In this case, we'll create three.
 
 ```python
 @tool
